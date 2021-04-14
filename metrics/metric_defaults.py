@@ -36,7 +36,7 @@ metric_defaults = EasyDict([(args.name, args) for args in [
     EasyDict(name='ids10k-h2',    func_name='metrics.inception_discriminative_score.IDS', num_images=10000, minibatch_per_gpu=8, hole_range=[0.4, 0.6]),
     EasyDict(name='ids10k-h3',    func_name='metrics.inception_discriminative_score.IDS', num_images=10000, minibatch_per_gpu=8, hole_range=[0.6, 0.8]),
     EasyDict(name='ids10k-h4',    func_name='metrics.inception_discriminative_score.IDS', num_images=10000, minibatch_per_gpu=8, hole_range=[0.8, 1.0]),
-    EasyDict(name='ids36k5',   func_name='metrics.inception_discriminative_score.IDS',num_images=36500, minibatch_per_gpu=8),
+    EasyDict(name='ids36k5',   func_name='metrics.inception_discriminative_score.IDS',num_images=100, minibatch_per_gpu=8),
     EasyDict(name='ids36k5-h0',    func_name='metrics.inception_discriminative_score.IDS', num_images=36500, minibatch_per_gpu=8, hole_range=[0.0, 0.2]),
     EasyDict(name='ids36k5-h1',    func_name='metrics.inception_discriminative_score.IDS', num_images=36500, minibatch_per_gpu=8, hole_range=[0.2, 0.4]),
     EasyDict(name='ids36k5-h2',    func_name='metrics.inception_discriminative_score.IDS', num_images=36500, minibatch_per_gpu=8, hole_range=[0.4, 0.6]),
