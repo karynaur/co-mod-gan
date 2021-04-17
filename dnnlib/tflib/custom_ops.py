@@ -127,7 +127,7 @@ def get_plugin(cuda_file):
         elif os.name == 'posix':
             lib_path = tf.sysconfig.get_lib()
             compile_opts += '"%s"' % os.path.join(lib_path, 'python', '_pywrap_tensorflow_internal.so')
-            compile_opts += ' --compiler-options \'-fPIC -D_GLIBCXX_USE_CXX11_ABI=0\''
+            compile_opts += ' --compiler-options \'-fPIC -D_GLIBCXX_USE_CXX11_ABI=1\''
         else:
             assert False # not Windows or Linux, w00t?
         compile_opts += ' --gpu-architecture=%s' % _get_cuda_gpu_arch_string()
